@@ -244,7 +244,7 @@ void CStartupManagerDialog::PopulateList()
         int row = m_list.InsertItem(i, e.name);
         m_list.SetItemText(row, 1, e.command);
         if (e.isRunOnce)
-            m_list.SetItemText(row, 2, _T("—"));
+            m_list.SetItemText(row, 2, _T("\u2014"));   // em dash; escaped so the source encoding doesn't matter
         else
             m_list.SetItemText(row, 2, e.enabled ? _T("Enabled") : _T("Disabled"));
         m_list.SetItemText(row, 3, e.hiveLabel);

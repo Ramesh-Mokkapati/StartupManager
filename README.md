@@ -4,6 +4,14 @@ A small Windows MFC utility to view, add, delete and enable/disable the programs
 
 Split out of DiskForge, where it used to be one of the built-in tools.
 
+## Screenshots
+
+![Startup Manager listing startup entries with their command, enabled/disabled status, hive and Run/RunOnce type](docs/screenshots/main-window.png)
+
+**Add Entry...** creates a new entry for the current user or all users, optionally as Run Once:
+
+![Add Startup Entry dialog with name, command, hive and Run once options](docs/screenshots/add-entry.png)
+
 ## Features
 
 - Reads all four startup locations: `HKCU\...\Run`, `HKLM\...\Run`, `HKCU\...\RunOnce` and `HKLM\...\RunOnce`
